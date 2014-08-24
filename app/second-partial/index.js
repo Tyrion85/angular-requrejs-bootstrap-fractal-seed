@@ -1,0 +1,3 @@
+define(['./second-controller'], function() {
+
+});

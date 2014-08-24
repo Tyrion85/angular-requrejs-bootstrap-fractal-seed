@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Seed</title>
+
+        <link rel="stylesheet" type="text/css" href="ext/bootstrap/css/bootstrap.min.css">
+    </head>
+
+    <body x-ng-controller="AppController">
+        <div class="container text-center">
+            <h1><a href="#">Seed</a></h1>
+
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Downloads</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-unit">
+                <h1>Some text is here</h1>
+
+                <p>And some more text</p>
+
+                <a href="#" class="btn btn-lg btn-success">Getting started</a>
+            </div>
+
+            <p>{{mainText}}</p>
+
+            <div class="row" x-ng-view="" id="partial">
+
+            </div>
+
+            <div class="row">
+                <div class="span4">
+                    <h4 class="muted text-center">Meet Our Clients</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <a href="#" class="btn"><i class="icon-user"></i> Our Clients</a>
+                </div>
+                <div class="span4">
+                    <h4 class="muted text-center">Know Our Employees</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <a href="#" class="btn btn-success"><i class="icon-star icon-white"></i> Our Employees</a>
+                </div>
+                <div class="span4">
+                    <h4 class="muted text-center">Reach Us</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <a href="#" class="btn btn-info">Contact Us</a>
+                </div>
+            </div>
+
+            <hr>
+            <div class="footer">
+                <p>&copy; 2014</p>
+            </div>
+        </div>
+
+        <script src="ext/lib/requirejs/requirejs-2.1.14.min.js" data-main="app/main.js"></script>
+    </body>
+</html>
